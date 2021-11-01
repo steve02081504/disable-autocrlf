@@ -1,0 +1,17 @@
+name: 'disable auto crlf'
+description: 'F*k yeah'
+branding:
+  icon: 'check'  
+  color: 'gray-dark'
+
+inputs:
+  fuck-auto-CRLF:
+    description: 'F'
+    default: true
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - id: F
+      run: git config --global core.autocrlf false
+      shell: pwsh
